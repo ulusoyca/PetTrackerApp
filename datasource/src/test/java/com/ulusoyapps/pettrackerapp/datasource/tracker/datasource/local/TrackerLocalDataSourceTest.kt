@@ -19,7 +19,6 @@ import com.google.common.truth.Truth
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import com.ulusoyapps.pettrackerapp.domain.entities.messages.MockError
-import com.ulusoyapps.pettrackerapp.domain.entities.messages.TrackerMessage
 import com.ulusoyapps.pettrackerapp.domain.entities.petandtracker.Tracker
 import com.ulusoyapps.unittesting.BaseArchTest
 import kotlinx.coroutines.flow.flow
@@ -79,10 +78,10 @@ class TrackerLocalDataSourceTest : BaseArchTest() {
     }
 
     @Test
-    fun testRemoveTracker() = runBlocking {
+    fun testDeleteTracker() = runBlocking {
         whenever(trackerCache.getTrackerAsOneShot(0L)).thenReturn(Ok(tracker))
-        whenever(trackerCache.removeTracker(0L)).thenReturn(success)
-        val actual = localDataSource.removeTracker(0L)
+        whenever(trackerCache.deleteTracker(0L)).thenReturn(success)
+        val actual = localDataSource.deleteTracker(0L)
         Truth.assertThat(actual).isEqualTo(success)
     }
 }

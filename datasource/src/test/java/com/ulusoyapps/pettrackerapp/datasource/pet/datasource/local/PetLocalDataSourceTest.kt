@@ -45,7 +45,6 @@ class PetLocalDataSourceTest : BaseArchTest() {
     }
 
     private val pet = Pet(
-        id = 0L,
         name = "Fluffy",
         breed = "Scottish",
         gender = Gender.MALE,

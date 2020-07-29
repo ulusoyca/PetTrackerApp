@@ -15,9 +15,9 @@ package com.ulusoyapps.pettrackerapp.domain.entities.petandtracker
 
 import android.graphics.Bitmap
 import com.ulusoyapps.pettrackerapp.domain.entities.location.LatLng
+import com.ulusoyapps.pettrackerapp.domain.entities.location.Location
 
 data class Pet(
-    val id: Long,
     val name: String,
     val breed: String,
     val birthday: Long,
@@ -32,5 +32,9 @@ data class Pet(
     /**
      * RGBA color code in [String] format starting with `#`. Example: `#00FF00`
      */
-    val color: String
+    val color: String,
+    /**
+     * Last known location of the pet
+     */
+    val lastLocation: Location? = null
 )
