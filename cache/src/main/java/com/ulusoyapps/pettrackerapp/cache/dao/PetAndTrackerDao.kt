@@ -22,9 +22,9 @@ import com.ulusoyapps.pettrackerapp.cache.entities.relationship.CachedPetAndCach
 interface PetAndTrackerDao {
     @Transaction
     @Query("SELECT * FROM CachedPet WHERE name = :name")
-    fun getCachedPetAndCachedTracker(name: String): CachedPetAndCachedTracker?
+    suspend fun getCachedPetAndCachedTracker(name: String): CachedPetAndCachedTracker?
 
     @Transaction
     @Query("SELECT * FROM CachedPet")
-    fun getAllCachedPetAndCachedTrackers(): List<CachedPetAndCachedTracker>
+    suspend fun getAllCachedPetAndCachedTrackers(): List<CachedPetAndCachedTracker>
 }

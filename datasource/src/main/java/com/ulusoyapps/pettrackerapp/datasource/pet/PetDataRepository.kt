@@ -28,44 +28,27 @@ class PetDataRepository
 @Inject constructor(
     private val localDataSource: PetDataSource
 ) : PetRepository {
-    override suspend fun getAllPets(): Flow<Result<List<Pet>, DomainMessage>> {
-        return localDataSource.getAllPets()
-    }
+    override suspend fun getAllPets(): Flow<Result<List<Pet>, DomainMessage>>
+            = localDataSource.getAllPets()
 
-    override suspend fun getPet(name: String): Flow<Result<Pet, DomainMessage>> {
-        return localDataSource.getPet(name)
-    }
+    override suspend fun getPet(name: String): Flow<Result<Pet, DomainMessage>>
+            = localDataSource.getPet(name)
 
-    override suspend fun savePet(pet: Pet): Result<Unit, DomainMessage> {
-        return localDataSource.savePet(pet)
-    }
+    override suspend fun savePet(pet: Pet): Result<Unit, DomainMessage>
+            = localDataSource.savePet(pet)
 
-    override suspend fun deletePet(name: String): Result<Unit, DomainMessage> {
-        return localDataSource.removePet(name)
-    }
+    override suspend fun deletePet(name: String): Result<Unit, DomainMessage>
+            = localDataSource.removePet(name)
 
-    override suspend fun setPetSafeZoneCenter(
-        petName: String,
-        latLng: LatLng
-    ): Result<Unit, DomainMessage> {
-        return localDataSource.setPetSafeZoneCenter(petName, latLng)
-    }
+    override suspend fun setPetSafeZoneCenter(petName: String, latLng: LatLng): Result<Unit, DomainMessage>
+            = localDataSource.setPetSafeZoneCenter(petName, latLng)
 
-    override suspend fun setPetSafeZoneRadiusInMeters(
-        petName: String,
-        radius: Double
-    ): Result<Unit, DomainMessage> {
-        return localDataSource.setPetSafeZoneRadiusInMeters(petName, radius)
-    }
+    override suspend fun setPetSafeZoneRadiusInMeters(petName: String, radius: Double): Result<Unit, DomainMessage>
+            = localDataSource.setPetSafeZoneRadiusInMeters(petName, radius)
 
-    override suspend fun setAlarmMode(
-        petName: String,
-        enabled: Boolean
-    ): Result<Unit, DomainMessage> {
-        return localDataSource.setAlarmMode(petName, enabled)
-    }
+    override suspend fun setAlarmMode(petName: String, enabled: Boolean): Result<Unit, DomainMessage>
+            = localDataSource.setAlarmMode(petName, enabled)
 
-    override suspend fun updatePet(pet: Pet): Result<Unit, DomainMessage> {
-        return localDataSource.updatePet(pet)
-    }
+    override suspend fun updatePet(pet: Pet): Result<Unit, DomainMessage>
+            = localDataSource.updatePet(pet)
 }

@@ -13,7 +13,6 @@
 package com.ulusoyapps.pettrackerapp.cache.dao
 
 import com.google.common.truth.Truth
-import com.ulusoyapps.pettrackerapp.cache.dao.PetDao
 import com.ulusoyapps.pettrackerapp.cache.entities.CachedLatLng
 import com.ulusoyapps.pettrackerapp.cache.entities.CachedPet
 import kotlinx.coroutines.Dispatchers
@@ -111,18 +110,11 @@ class PetDaoTest : PetTrackerDatabaseTest() {
             safeZoneCenter = CachedLatLng(0f, 0f)
         )
         petDao.addPet(newEntry)
-        val updatedEntry = CachedPet(
-            name = "Fluffy",
-            gender = 2,
-            breed = "Breedx",
-            birthday = 0L,
-            color = "",
-            safeZoneCenter = CachedLatLng(0f, 0f)
-        )
+        val updatedEntry = newEntry.copy(breed = "AnotherBreed")
         val numberOfRowsUpdated = petDao.update(updatedEntry)
-        val expected = petDao.getPet("Fluffy")
-        Truth.assertThat(expected).isNotEqualTo(newEntry)
-        Truth.assertThat(expected).isEqualTo(updatedEntry)
+        val actual = petDao.getPet("Fluffy")
+        Truth.assertThat(actual).isNotEqualTo(newEntry)
+        Truth.assertThat(actual).isEqualTo(updatedEntry)
         Truth.assertThat(numberOfRowsUpdated).isEqualTo(1)
     }
 

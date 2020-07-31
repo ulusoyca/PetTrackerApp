@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit
 @Entity
 data class CachedTracker(
     @PrimaryKey val id: Long,
-    val petName: String?,
+    val petName: String? = null,
     val batteryPercentage: Double = 100.0,
     /**
      * The period of location update in milliseconds. Default value is 1 minute

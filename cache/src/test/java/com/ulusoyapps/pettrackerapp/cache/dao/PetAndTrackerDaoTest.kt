@@ -13,9 +13,6 @@
 package com.ulusoyapps.pettrackerapp.cache.dao
 
 import com.google.common.truth.Truth
-import com.ulusoyapps.pettrackerapp.cache.dao.PetAndTrackerDao
-import com.ulusoyapps.pettrackerapp.cache.dao.PetDao
-import com.ulusoyapps.pettrackerapp.cache.dao.PetTrackerDatabaseTest
 import com.ulusoyapps.pettrackerapp.cache.entities.CachedLatLng
 import com.ulusoyapps.pettrackerapp.cache.entities.CachedPet
 import com.ulusoyapps.pettrackerapp.cache.entities.CachedTracker
@@ -95,8 +92,8 @@ class PetAndTrackerDaoTest : PetTrackerDatabaseTest() {
     }
 
     @Test
-    fun `should return empty list if there is nothing`() = runBlocking(Dispatchers.IO) {
-        val expected = petAndTrackerDao.getAllCachedPetAndCachedTrackers()
-        Truth.assertThat(expected).isEmpty()
+    fun `shouldReturnEmptyListWhenNoPetsFound`() = runBlocking(Dispatchers.IO) {
+        val actual = petAndTrackerDao.getAllCachedPetAndCachedTrackers()
+        Truth.assertThat(actual).isEmpty()
     }
 }

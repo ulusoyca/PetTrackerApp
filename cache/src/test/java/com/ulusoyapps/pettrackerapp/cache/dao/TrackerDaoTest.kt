@@ -98,14 +98,14 @@ class TrackerDaoTest : PetTrackerDatabaseTest() {
     }
 
     @Test
-    fun `should delete the entry`() = runBlocking(Dispatchers.IO) {
+    fun `should delete the tracker`() = runBlocking(Dispatchers.IO) {
         val newEntry = CachedTracker(
             id = 0L,
             petName = "Fluffy"
         )
         trackerDao.addTracker(newEntry)
-        val expected = trackerDao.getTracker(0L)
-        Truth.assertThat(expected).isEqualTo(newEntry)
+        val actual = trackerDao.getTracker(0L)
+        Truth.assertThat(actual).isEqualTo(newEntry)
 
         trackerDao.delete(newEntry)
         val removed = trackerDao.getTracker(0L)
