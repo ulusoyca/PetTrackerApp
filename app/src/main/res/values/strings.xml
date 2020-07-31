@@ -12,5 +12,41 @@
   -->
 
 <resources>
-    <string name="app_name">PetTrackerApp</string>
+    <string name="app_name">Pet Tracker</string>
+    <string name="add_pet">Add pet</string>
+    <string name="find_my_pet">find my pet</string>
+    <string name="add_tracker">add tracker</string>
+    <string name="my_pets">My Pets</string>
+    <string name="err_live_tracking_pet_not_found">Tracker is not assigned to any pet yet.</string>
+    <string name="err_tracker_not_found">Could not found a paired tracker</string>
+    <string name="permission_rationale">Accessing current location requires following permissions:</string>
+    <string name="no_access_to_current_location">Accessing current location requires location permissions</string>
+    <string name="is_inside_safe_zone">Inside safe zone</string>
+    <string name="is_outside_safe_zone">Outside safe zone</string>
+    <string name="home">Home</string>
+    <string name="heatmap">Heatmaps</string>
+    <string name="settings">Settings</string>
+    <string name="locator">Locator</string>
+    <string name="activity">Activity</string>
+    <string name="name">Name</string>
+    <string name="pet_profile">Pet Profile</string>
+    <string name="breed">Breed</string>
+    <string name="helper_text_birthday">Day, month, year (dd/mm/yyyy)</string>
+    <string name="birthday_format">dd/mm/yyyy</string>
+    <string name="birthday">Birthday</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+    <string name="save_pet">Save pet</string>
+    <string name="add_pet_safe_zone_helper">Tap on the map to add a safe zone center for your pet:</string>
+    <string name="name_cannot_be_empty">Pet name cannot be empty</string>
+    <string name="breed_cannot_be_empty">Breed cannot be empty</string>
+    <string name="pet_name_exists">You already have a pet with this name.</string>
+    <string name="something_went_wrong">Oopps... Something went wrong</string>
+    <string name="wrong_date_format">Date format should be dd/mm/yyyy</string>
+    <string name="looking_for_trackers">Looking for trackers</string>
+    <string name="looking_for_trackers_helper">Please make sure that the tracker is activated for discovery</string>
+    <string name="delete_pet">delete pet</string>
+    <string name="update_pet">update pet</string>
+    <string name="fluffy">Fluffy</string>
+    <string name="buddy">Buddy</string>
 </resources>
