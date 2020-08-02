@@ -1,27 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+  ~ All rights reserved.
   ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License") you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~ Licensed under the Apache License, Version 2.0 (the "License")
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
   ~
   ~        http://www.apache.org/licenses/LICENSE-2.0
   ~
-  ~  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~
-  ~  See the License for the specific language governing permissions and limitations under the License.
+  ~  Unless required by applicable law or agreed to in writing,
   -->
 
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.ulusoyapps.pettracker.main.splash.SplashFragment"
-        android:label="SplashFragment">
+        android:id="@+id/homeFragment"
+        android:name="com.ulusoyapps.pettrackerapp.main.home.HomeFragment"
+        android:label="HomeFragment">
+
         <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_homeFragment_to_addPetFragment"
+            app:destination="@id/addPetFragment"
+            app:enterAnim="@anim/transition_slide_in_from_right"
+            app:exitAnim="@anim/transition_slide_out_to_left"
+            app:popEnterAnim="@anim/transition_slide_in_from_left"
+            app:popExitAnim="@anim/transition_slide_out_to_right">
+        </action>
+
+        <action
+            android:id="@+id/action_homeFragment_to_addPetFragmentForEdit"
+            app:destination="@id/addPetFragment"
+            app:enterAnim="@anim/transition_slide_in_from_right"
+            app:exitAnim="@anim/transition_slide_out_to_left"
+            app:popEnterAnim="@anim/transition_slide_in_from_left"
+            app:popExitAnim="@anim/transition_slide_out_to_right">
+            <argument
+                android:name="petName"
+                app:argType="string" />
+        </action>
+
+        <action
+            android:id="@+id/action_homeFragment_to_addTrackerFragment"
+            app:destination="@id/addTrackerFragment"
+            app:enterAnim="@anim/transition_slide_in_from_right"
+            app:exitAnim="@anim/transition_slide_out_to_left"
+            app:popEnterAnim="@anim/transition_slide_in_from_left"
+            app:popExitAnim="@anim/transition_slide_out_to_right">
+        </action>
+
+        <deepLink
+            android:id="@+id/deepLinkHome"
+            app:uri="pettracker://pet-tracker.fi/home" />
     </fragment>
+
+    <fragment
+        android:id="@+id/addPetFragment"
+        android:name="com.ulusoyapps.pettrackerapp.main.addpet.AddPetFragment"
+        android:label="AddPetFragment">
+
+        <action
+            android:id="@+id/action_addPetFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/transition_slide_in_from_right"
+            app:exitAnim="@anim/transition_slide_out_to_left"
+            app:popEnterAnim="@anim/transition_slide_in_from_left"
+            app:popExitAnim="@anim/transition_slide_out_to_right">
+        </action>
+
+        <deepLink
+            android:id="@+id/deepLinkAddPet"
+            app:uri="pettracker://pet-tracker.fi/addPet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTrackerFragment"
+        android:name="com.ulusoyapps.pettrackerapp.main.addtracker.AddTrackerFragment"
+        android:label="AddTrackerFragment">
+        <deepLink
+            android:id="@+id/deepLinkAddTracker"
+            app:uri="pettracker://pet-tracker.fi/addTracker" />
+    </fragment>
+
 </navigation>

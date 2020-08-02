@@ -15,4 +15,3 @@
 package com.ulusoyapps.pettrackerapp;
 
 import com.airbnb.epoxy.EpoxyDataBindingPattern;
-import com.ulusoyapps.pettracker.R;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+ * Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). 
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License")
@@ -8,7 +8,7 @@
  *
  *        http://www.apache.org/licenses/LICENSE-2.0
  *
- *  Unless required by applicable law or agreed to in writing,
+ *  Unless required by applicable law or agreed to in writing,  
  */
 
 package com.ulusoyapps.pettrackerapp.cache.entities

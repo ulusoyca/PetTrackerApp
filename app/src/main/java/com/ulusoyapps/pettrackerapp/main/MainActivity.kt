@@ -14,11 +14,10 @@
 package com.ulusoyapps.pettrackerapp.main
 
 import android.os.Bundle
-import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.ulusoyapps.pettracker.R
-import com.ulusoyapps.pettracker.databinding.ActivityMainBinding
+import com.ulusoyapps.pettrackerapp.R
+import com.ulusoyapps.pettrackerapp.databinding.ActivityMainBinding
 import dagger.android.support.DaggerAppCompatActivity
 
 class MainActivity : DaggerAppCompatActivity() {
@@ -29,15 +28,6 @@ class MainActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val navController = findNavController(R.id.host_fragment).apply {
-            addOnDestinationChangedListener { _, destination, _ ->
-                binding.bottomNav.visibility = if (destination.id == R.id.splashFragment) {
-                   View.GONE
-                } else {
-                    View.VISIBLE
-                }
-            }
-        }
-        binding.bottomNav.setupWithNavController(navController)
+        binding.bottomNav.setupWithNavController(findNavController(R.id.host_fragment))
     }
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+  ~ All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License")
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  -->
+
+<resources>
+    <style name="Widget.App.Slider" parent="Widget.MaterialComponents.Slider">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Slider</item>
+        <item name="labelStyle">@style/Widget.App.Tooltip</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Slider" parent="">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.App.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="shapeAppearanceOverlay">@style/Widget.App.Tooltip.ShapeOverlay</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Tooltip</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.App.Tooltip.ShapeOverlay" parent="ShapeAppearance.App.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TextAppearance.App.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+</resources>

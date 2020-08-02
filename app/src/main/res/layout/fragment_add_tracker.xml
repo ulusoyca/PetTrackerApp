@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License") you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~
+  ~  See the License for the specific language governing permissions and limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/included_view_app_bar"
+        layout="@layout/app_bar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/pet_profile_animation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/tracker_discovery_anim"
+        app:lottie_speed="0.7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_spacing_xxlarge"
+        android:src="@drawable/tracker_device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/included_view_app_bar" />
+
+    <TextView
+        android:id="@+id/looking_for"
+        style="@style/Body.Medium.ColorSecondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_spacing_large"
+        android:gravity="center"
+        android:text="@string/looking_for_trackers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        style="@style/Body.Light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_spacing_xxlarge"
+        android:layout_marginTop="@dimen/size_spacing_large"
+        android:layout_marginEnd="@dimen/size_spacing_xxlarge"
+        android:gravity="center"
+        android:text="@string/looking_for_trackers_helper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/looking_for" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

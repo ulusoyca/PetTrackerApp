@@ -13,7 +13,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ulusoyapps.pettracker">
+    package="com.ulusoyapps.pettrackerapp">
 
     <!-- To request foreground location access, declare one of these permissions. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

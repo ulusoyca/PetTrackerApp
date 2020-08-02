@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+  ~ All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License")
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  -->
+
+<resources>
+    <color name="colorPrimary">@color/yellow</color>
+    <color name="colorSecondary">@color/orange</color>
+    <color name="colorPrimaryDark">#c2a300</color>
+    <color name="colorAccent">#ffff5f</color>
+
+    <color name="map_circle_color_fill">#4D00FF38</color>
+    <color name="map_circle_color_stroke">@color/transparent_gray</color>
+    <color name="bottom_sheet_icon">#757575</color>
+    <color name="edit_text_color_label">@color/light_gray</color>
+    <color name="edit_text_color">@color/dark_gray</color>
+    <color name="edit_text_stroke">@color/light_gray</color>
+    <color name="fluffy_color">#4df9d423</color>
+    <color name="buddy_color">#4dFFA751</color>
+</resources>

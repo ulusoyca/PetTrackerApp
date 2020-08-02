@@ -14,6 +14,7 @@
 package com.ulusoyapps.pettrackerapp.main
 
 import com.ulusoyapps.pettrackerapp.ActivityScope
+import com.ulusoyapps.pettrackerapp.main.home.HomeFragmentModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -22,7 +23,8 @@ abstract class MainActivityModule {
     @ActivityScope
     @ContributesAndroidInjector(
         modules = [
-            MainModule::class
+            MainModule::class,
+            HomeFragmentModule::class
         ]
     )
     abstract fun contributeMainActivityInjector(): MainActivity

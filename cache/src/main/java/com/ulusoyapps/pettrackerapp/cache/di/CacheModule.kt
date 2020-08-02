@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+ * Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). 
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License")
@@ -8,7 +8,7 @@
  *
  *        http://www.apache.org/licenses/LICENSE-2.0
  *
- *  Unless required by applicable law or agreed to in writing,
+ *  Unless required by applicable law or agreed to in writing,  
  */
 
 package com.ulusoyapps.pettrackerapp.cache.di
@@ -28,6 +28,7 @@ import com.ulusoyapps.pettrackerapp.datasource.tracker.datasource.local.TrackerC
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
+import java.io.File
 
 @Module
 abstract class CacheModule {
@@ -48,7 +49,8 @@ abstract class CacheModule {
             return Room.databaseBuilder(
                 context,
                 PetTrackerDatabase::class.java, "pet_tracker.db"
-            ).build()
+            ).createFromFile(File("../database/prepopulated/pet_tracker.db"))
+                .build()
         }
 
         @Provides

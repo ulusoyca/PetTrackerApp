@@ -31,9 +31,29 @@ android {
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+
     buildFeatures {
         viewBinding = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
@@ -60,6 +80,7 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
 
     // Epoxy
     implementation "com.airbnb.android:epoxy-databinding:$epoxy_version"

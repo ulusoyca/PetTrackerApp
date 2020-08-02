@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+  ~ All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License")
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  -->
+
+<resources>
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.SmallComponent.Button</item>
+        <item name="boxStrokeColor">@color/edit_text_stroke</item>
+        <item name="hintTextColor">@color/orange</item>
+        <item name="android:textColorHint">@color/edit_text_color_label</item>
+        <item name="android:textColor">@color/edit_text_color_label</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorOnPrimary">@color/edit_text_color_label</item>
+        <item name="colorOnSurface">@color/edit_text_color_label</item>
+        <item name="android:textColorPrimary">@color/edit_text_color</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+</resources>
