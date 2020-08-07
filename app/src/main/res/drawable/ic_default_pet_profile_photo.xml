@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License") you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~
+  ~  See the License for the specific language governing permissions and limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+  <path
+      android:pathData="M50,50m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M4.926,50a45.074,45.98 0,1 0,90.148 0a45.074,45.98 0,1 0,-90.148 0z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M72.395,34.083C71.853,32.46 70.825,31.051 69.456,30.054C68.086,29.057 66.444,28.521 64.76,28.524H58.293V9.045L55.575,9.44C49.41,10.337 44.607,13.516 41.303,18.891C38.92,22.766 37.812,27.04 37.298,30.236C33.75,33.015 30.662,36.842 28.111,41.626C25.961,45.658 24.181,50.383 22.82,55.671C20.521,64.605 20.21,72.016 20.198,72.327L20.197,80.905H24.958V72.478C25.018,71.231 26.517,43.951 40.886,33.563L41.729,32.954L41.867,31.912C42.583,26.516 45.06,17.604 53.531,14.864V33.371H64.76C65.448,33.369 66.12,33.586 66.681,33.993C67.241,34.4 67.662,34.975 67.885,35.639C69.783,41.342 73.045,48.479 78.129,51.833L76.6,57.668C76.068,59.749 74.857,61.585 73.167,62.874C71.476,64.164 69.405,64.831 67.293,64.767C63.027,64.637 58.587,65.203 54.095,66.45L52.34,66.937V80.905H57.102V70.676C60.393,69.885 63.77,69.527 67.15,69.611C70.334,69.701 73.453,68.693 76.004,66.752C78.554,64.811 80.385,62.05 81.201,58.917L83.744,49.211L81.85,48.385C78.308,46.84 74.95,41.761 72.395,34.083Z"
+      android:fillColor="#FFA751"/>
+</vector>

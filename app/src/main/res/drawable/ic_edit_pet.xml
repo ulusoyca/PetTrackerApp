@@ -1,0 +1,23 @@
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps). All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License") you may not use this file except in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~
+  ~  See the License for the specific language governing permissions and limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M6.0398,17.625C6.0867,17.625 6.1336,17.6203 6.1805,17.6133L10.1227,16.9219C10.1695,16.9125 10.2141,16.8914 10.2469,16.8563L20.182,6.9211C20.2038,6.8994 20.221,6.8737 20.2328,6.8453C20.2445,6.8169 20.2506,6.7866 20.2506,6.7559C20.2506,6.7252 20.2445,6.6948 20.2328,6.6664C20.221,6.6381 20.2038,6.6123 20.182,6.5906L16.2867,2.693C16.2422,2.6484 16.1836,2.625 16.1203,2.625C16.057,2.625 15.9984,2.6484 15.9539,2.693L6.0188,12.6281C5.9836,12.6633 5.9625,12.7055 5.9531,12.7523L5.2617,16.6945C5.2389,16.8201 5.2471,16.9493 5.2854,17.071C5.3238,17.1927 5.3913,17.3032 5.482,17.393C5.6367,17.543 5.8313,17.625 6.0398,17.625V17.625ZM7.6195,13.5375L16.1203,5.0391L17.8383,6.757L9.3375,15.2555L7.2539,15.6234L7.6195,13.5375V13.5375ZM20.625,19.5938H3.375C2.9602,19.5938 2.625,19.9289 2.625,20.3438V21.1875C2.625,21.2906 2.7094,21.375 2.8125,21.375H21.1875C21.2906,21.375 21.375,21.2906 21.375,21.1875V20.3438C21.375,19.9289 21.0398,19.5938 20.625,19.5938Z"
+      android:strokeAlpha="0.7"
+      android:fillColor="#000000"
+      android:fillAlpha="0.7"/>
+</vector>

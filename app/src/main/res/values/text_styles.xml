@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Cagatay Ulusoy (Ulus Oy Apps).
+  ~ All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License")
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  -->
+
+<resources>
+
+    <style name="Body.Light" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="Body.Light.White" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Body.Medium" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="Body.Medium.ColorSecondary" parent="Body.Medium">
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="Headline.Medium" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="Headline.Large" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="Headline.XLarge" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+</resources>
